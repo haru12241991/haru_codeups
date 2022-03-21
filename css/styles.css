@@ -893,13 +893,15 @@ select::-ms-expand {
   width: 100%;
   background: rgba(0, 0, 0, .5);
   z-index: 900;
-  /* MV以下で透過解除 */
 }
-.header.header-color-scroll {
+
+/* MV以下で透過解除 */
+.header .header-color-scroll {
   background: black;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
+
 .header__inner {
   padding: 13px 21px 8px;
   padding: 0.8125rem 21px 0.5rem;
@@ -919,6 +921,7 @@ select::-ms-expand {
     margin: 0 auto;
   }
 }
+
 .header__logo {
   z-index: 901;
 }
@@ -928,15 +931,18 @@ select::-ms-expand {
     margin-left: 2rem;
   }
 }
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .header__nav__item + .header__nav__item {
   margin-left: 29.8px;
   margin-left: 1.8625rem;
 }
+
 .header__nav__link {
   padding: 8px 0;
   padding: 0.5rem 0;
@@ -945,6 +951,7 @@ select::-ms-expand {
   display: block;
   position: relative;
 }
+
 .header__nav__link-underline::after {
   position: absolute;
   content: "";
@@ -968,6 +975,7 @@ select::-ms-expand {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
+
 .header__nav__link-attention {
   padding: 8px 31.3px;
   padding: 0.5rem 1.95625rem;
