@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.blog {
+  margin-top: rem(61);
+
+  @include mq("md") {
+    margin-top: rem(174);
+  }
+
+  &__items {
+    margin-top: rem(70.5);
+
+    @include mq("md") {
+      margin-top: rem(5);
+    }
+  }
+
+  &__button__wrapper {
+    text-align: center;
+    margin-top: rem(23);
+    position: relative;
+    z-index: 1;
+
+    @include mq("md") {
+      margin-top: rem(48);
+    }
+  }
+}
+

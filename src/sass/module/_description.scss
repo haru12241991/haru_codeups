@@ -1,0 +1,138 @@
+@use "global" as *;
+
+.description {
+
+  @include mq("md") {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__content {
+    background: $black;
+    margin-top: rem(52);
+
+    @include mq("md") {
+      background: transparent;
+  
+      &-right {
+        background: linear-gradient(90deg, transparent 0%, transparent 30%, $black 30%, $black 100%);
+        padding-top: rem(78);
+        padding-bottom: rem(78);
+      }
+      
+      &-left {
+        background: linear-gradient(90deg, $black 0%, $black 70%, transparent 70%, transparent 100%);
+        padding-top: rem(81);
+        padding-bottom: rem(78);
+      }
+      
+      &__wrapper{
+        width: 100%;
+        max-width: rem(1280);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: rem(25);
+        padding-right: rem(25);
+        margin: 0 auto;
+    
+        &-left{
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+
+    @include mq("md") {
+      width: rem(557);
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 70%;
+    }
+
+    & > img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    padding-left: rem(21);
+    padding-right: rem(21);
+    padding-bottom: rem(16);
+    
+
+    @include mq("md") {
+      width: 100%;
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: rem(510);
+      text-align: left;
+      padding: 0;
+
+      &-right {
+        margin-right: rem(32);
+      }
+
+      &-left {
+        margin-left: rem(32);
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: 1;
+    letter-spacing: rem(2);
+    margin-top: rem(7);
+    text-align: center;
+
+    @include mq("md") {
+      text-align: left;
+      font-size: rem(25);
+      margin-top: 0;
+      letter-spacing: rem(0.5);
+    }
+  }
+
+  &__text {
+    text-align: left;
+    font-weight: $normal;
+    line-height: 1.43333;
+    letter-spacing: rem(1.83333);
+    margin-top: rem(28);
+
+    @include mq("md") {
+      margin-top: rem(41);
+      line-height: 2.19999;
+      letter-spacing: rem(0.4999);
+    }
+  }
+
+  &__button {
+    margin-top: rem(28);
+    @include mq("md") {
+      margin-top: rem(46);
+    }
+  }
+}
+
+
+

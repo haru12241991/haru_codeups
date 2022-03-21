@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.works{
+  margin-top: rem(82);
+
+  @include mq('md'){
+    margin-top: rem(176);
+  }
+
+  &__content{
+
+    @include mq('md'){  
+      margin-top: rem(-7);
+    }
+  }
+
+  &__button__wrapper{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+

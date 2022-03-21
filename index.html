@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content="CodeUps課題サイトです" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <!-- noindex表記 -->
+    <meta name="”robots”" content="”noindex”" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header js-header">
+      <div class="header__inner">
+        <div class="logo header__logo">
+          <img
+            class="logo__img"
+            src="./images/common/CodeUps-logo.png"
+            alt="ロゴアイコン"
+          />
+        </div>
+
+        <!-- drawer -->
+        <div class="drawer-icon header__drawer-icon">
+          <div class="drawer-icon__bars">
+            <div class="drawer-icon__bar1"></div>
+            <div class="drawer-icon__bar2"></div>
+            <div class="drawer-icon__bar3"></div>
+          </div>
+        </div>
+
+        <div class="drawer-content header__drawer-content">
+          <div class="drawer-content__items">
+            <div class="drawer-content__item">
+              <a href="#">トップ</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#info">お知らせ</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#content">事業内容</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#works">制作実績</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#overview">企業概要</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#blog">ブログ</a>
+            </div>
+            <div class="drawer-content__item">
+              <a href="#contact">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PC nav -->
+        <div class="header-right u-desktop">
+          <ul class="header__nav">
+            <li class="header__nav__item">
+              <a class="header__nav__link header__nav__link-underline" href="#"
+                >トップ</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a
+                class="header__nav__link header__nav__link-underline"
+                href="#info"
+                >お知らせ</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a
+                class="header__nav__link header__nav__link-underline"
+                href="#content"
+                >事業内容</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a
+                class="header__nav__link header__nav__link-underline"
+                href="#works"
+                >制作実績</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a
+                class="header__nav__link header__nav__link-underline"
+                href="#overview"
+                >企業概要</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a
+                class="header__nav__link header__nav__link-underline"
+                href="#blog"
+                >ブログ</a
+              >
+            </li>
+            <li class="header__nav__item header__nav__item-attention">
+              <a
+                class="header__nav__link header__nav__link-attention"
+                href="#contact"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- MV -->
+      <div id="mv" class="mv">
+        <div class="mv-content">
+          <h1 class="mv__title">メインタイトルが入ります</h1>
+          <p class="mv__text">サブタイトルが入ります</p>
+        </div>
+        <!-- スライダーのコンテナ -->
+        <div class="mv-swiper swiper">
+          <!-- 必要に応じたwrapper -->
+          <div class="mv-swiper-wrapper swiper-wrapper">
+            <!-- スライド -->
+            <div class="mv-swiper-slide swiper-slide">
+              <div class="mv-swiper-slide__img">
+                <img src="./images/common/MV-img1.png" alt="MV画像1" />
+              </div>
+            </div>
+            <div class="mv-swiper-slide swiper-slide">
+              <div class="mv-swiper-slide__img">
+                <img src="./images/common/MV-img2.png" alt="MV画像2" />
+              </div>
+            </div>
+            <div class="mv-swiper-slide swiper-slide">
+              <div class="mv-swiper-slide__img">
+                <img src="./images/common/MV-img3.png" alt="MV画像3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- お知らせ -->
+      <section id="info" class="info">
+        <div class="inner info__inner">
+          <div class="info__header">
+            <time class="info__time" datetime="2020-07-20">2020.07.20</time>
+            <p class="info__label">お知らせ</p>
+          </div>
+          <div class="info__title">
+            <a href="#">
+              記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。 記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+            </a>
+          </div>
+          <div class="info__button__wrapper">
+            <a href="#" class="button info__button">すべて見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 事業内容 -->
+      <section id="content" class="content">
+        <div class="inner content-inner">
+          <div class="section-header content-header">
+            <h2 class="section-header__title content-header__title">Content</h2>
+            <p class="section-header__text content-header__text">事業内容</p>
+          </div>
+        </div>
+        <div class="content__body">
+          <a href="#" class="content__item1">
+            <div class="content__img">
+              <img src="./images/common/content-img1.png" alt="企業理念画像1" />
+            </div>
+          </a>
+          <a href="#" class="content__item2">
+            <div class="content__img">
+              <img src="./images/common/content-img2.png" alt="企業理念画像2" />
+            </div>
+          </a>
+          <a href="#" class="content__item3">
+            <div class="content__img">
+              <img src="./images/common/content-img3.png" alt="企業理念画像3" />
+            </div>
+          </a>
+          <a href="#" class="content__item4">
+            <div class="content__img">
+              <img src="./images/common/content-img4.png" alt="企業理念画像4" />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 制作実績 -->
+      <section id="works" class="works description">
+        <div class="works__inner description__inner inner">
+          <div class="works__header description__header section-header">
+            <h2
+              class="
+                works__header__title
+                description__header__title
+                section-header__title section-header__title-right
+              "
+            >
+              Works
+            </h2>
+            <p
+              class="
+                works__header__text
+                description__header__text
+                section-header__text
+              "
+            >
+              制作実績
+            </p>
+          </div>
+        </div>
+        <div
+          class="works__content description__content description__content-right"
+        >
+          <div class="works__content__wrapper description__content__wrapper">
+            <div class="works-swiper">
+              <!-- スライダーのコンテナ -->
+              <div class="swiper works-swiper__content">
+                <!-- スライダーのwrapper -->
+                <div class="swiper-wrapper works-swiper-wrapper">
+                  <!-- スライド -->
+                  <div class="swiper-slide works-swiper-slide">
+                    <div class="description__img works__img">
+                      <img
+                        src="./images/common/works-img1.png"
+                        alt="制作実績画像1"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide works-swiper-slide">
+                    <div class="description__img works__img">
+                      <img
+                        src="./images/common/works-img2.png"
+                        alt="制作実績画像2"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide works-swiper-slide">
+                    <div class="description__img works__img">
+                      <img
+                        src="./images/common/works-img3.png"
+                        alt="制作実績画像3"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- swiperページネーション -->
+              <div class="works-swiper-pagination__wrapper">
+                <div class="swiper-pagination works-swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="works__body description__body description__body-left">
+              <h3 class="works__title description__title">
+                メインタイトルが入ります。
+              </h3>
+              <p class="works__text description__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </p>
+              <div class="works__button__wrapper">
+                <a href="#" class="works__button button description__button"
+                  >詳しく見る</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 背景線 -->
+        <div class="background-line"></div>
+      </section>
+
+      <!-- 企業概要 -->
+      <section id="overview" class="overview description">
+        <div class="overview__inner description__inner inner">
+          <div class="overview__header description__header section-header">
+            <h2
+              class="
+                overview__header__title
+                description__header__title
+                section-header__title
+              "
+            >
+              Overview
+            </h2>
+            <p
+              class="
+                overview__header__text
+                description__header__text
+                section-header__text
+              "
+            >
+              企業概要
+            </p>
+          </div>
+        </div>
+        <div
+          class="
+            overview__content
+            description__content description__content-left
+          "
+        >
+          <div
+            class="
+              overview__content__wrapper
+              description__content__wrapper description__content__wrapper-left
+            "
+          >
+            <div class="overview__img description__img">
+              <img src="./images/common/overview-img.png" alt="企業概要画像" />
+            </div>
+            <div
+              class="overview__body description__body description__body-right"
+            >
+              <h3 class="overview__title description__title">
+                メインタイトルが入ります。
+              </h3>
+              <p class="overview__text description__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </p>
+              <div class="overview__button__wrapper">
+                <a href="#" class="overview__button button description__button"
+                  >詳しく見る</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ブログ -->
+      <section id="blog" class="blog">
+        <div class="inner blog__inner">
+          <div class="blog-header section-header">
+            <h2
+              class="
+                blog-header__title
+                section-header__title section-header__title-right
+              "
+            >
+              Blog
+            </h2>
+            <p class="blog-header__text section-header__text">ブログ</p>
+          </div>
+          <div class="blog__items card-lists">
+            <a href="#" class="card-list__item blog-card blog-card-new">
+              <figure class="blog-card__img">
+                <img src="./images/common/blog-img1.png" alt="ブログ画像1" />
+              </figure>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="blog-card__text">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </p>
+              </div>
+              <div class="blog-card__info">
+                <p class="blog-card__category">カテゴリ</p>
+                <time class="blog-card__date" datetime="2021-07-20"
+                  >2021.07.20</time
+                >
+              </div>
+            </a>
+            <a href="#" class="card-list__item blog-card">
+              <figure class="blog-card__img">
+                <img src="./images/common/blog-img2.png" alt="ブログ画像2" />
+              </figure>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="blog-card__text">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </p>
+              </div>
+              <div class="blog-card__info">
+                <p class="blog-card__category">カテゴリ</p>
+                <time class="blog-card__date" datetime="2021-07-20"
+                  >2021.07.20</time
+                >
+              </div>
+            </a>
+            <a href="#" class="card-list__item blog-card">
+              <figure class="blog-card__img">
+                <img src="./images/common/blog-img3.png" alt="ブログ画像3" />
+              </figure>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="blog-card__text">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </p>
+              </div>
+              <div class="blog-card__info">
+                <p class="blog-card__category">カテゴリ</p>
+                <time class="blog-card__date" datetime="2021-07-20"
+                  >2021.07.20</time
+                >
+              </div>
+            </a>
+          </div>
+          <div class="blog__button__wrapper">
+            <a href="#" class="blog-button button">詳しく見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- コンタクト -->
+      <section id="contact" class="contact">
+        <div class="contact-inner inner">
+          <div class="contact-header section-header">
+            <h2 class="contact-header__title section-header__title">Contact</h2>
+            <p class="contact-header__text section-header__text">
+              お問い合わせ
+            </p>
+          </div>
+          <div class="contact__body">
+            <p class="contact__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+            <div class="contact__button__wrapper">
+              <a href="#" class="button contact__button">お問い合わせへ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <div class="logo footer__logo">
+            <img
+              class="logo__img"
+              src="./images/common/CodeUps-logo.png"
+              alt="ロゴアイコン"
+            />
+          </div>
+
+          <ul class="footer__nav">
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#">トップ</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#info">お知らせ</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#content">事業内容</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#works">制作実績</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#overview">企業概要</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#blog">自社メディア</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#blog">ブログ</a>
+            </li>
+            <li class="footer__nav__item">
+              <a class="footer__nav__link" href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer-copyright">© 2021 CodeUps Inc.</p>
+      </div>
+
+      <!-- トップへ戻るボタン -->
+      <div class="page-top"><a href="#"></a></div>
+    </footer>
+  </body>
+</html>

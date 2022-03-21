@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.logo{ 
+  display: inline-block;
+  &__img{
+    width: rem(73);
+    @include mq('md'){
+      width: rem(94);
+    }
+  }
+}

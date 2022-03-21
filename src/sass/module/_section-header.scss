@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.section-header {
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  z-index: -1;
+
+  &__title {
+    font-size: rem(50);
+    font-family: $english-font-family;
+    font-weight: $normal;
+    color: $yellow;
+    opacity: 0.2;
+    letter-spacing: rem(2);
+
+    @include mq('md'){
+      font-size: rem(110);
+      letter-spacing: rem(2);
+      text-align: left;
+
+      &-right{
+        text-align: right;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $base-font-family;
+    font-size: rem(20);
+    color: $white;
+    margin-top: rem(-7.8);
+    letter-spacing: rem(2);
+
+    @include mq('md'){
+      position: absolute;
+      font-size: rem(30);
+      top: rem(30);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
