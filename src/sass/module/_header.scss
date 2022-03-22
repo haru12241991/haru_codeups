@@ -33,6 +33,7 @@
 
 .header__logo {
   z-index: 901;
+  
   @include mq("md") {
     padding-top: rem(8);
     margin-left: rem(32);
