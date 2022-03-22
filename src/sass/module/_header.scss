@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   margin: 0;
+  height: rem(50);
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 900;
@@ -18,10 +19,11 @@
 }
 
 .header__inner {
-  padding: rem(13) $padding-sp rem(8);
+  height: inherit;
+  align-items: center;
   display: flex;
-  align-items: start;
   justify-content: space-between;
+  padding: 0 rem(22);
 
   @include mq("md") {
     padding: 0;
