@@ -80,7 +80,7 @@ jQuery(function ($) {
   $(".drawer-icon").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
     // $(".p-drawer-menu").toggleClass("is-show");
-    $(".drawer-icon__bars").toggleClass("is-active");
+    $(".drawer-icon").toggleClass("is-active");
     $(".drawer-content").toggleClass("is-active");
     // $(".drawer-background").toggleClass("is-active");
     $("html").toggleClass("is-fixed");

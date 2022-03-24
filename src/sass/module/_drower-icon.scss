@@ -6,52 +6,46 @@ $drawer-color: #fff;
 
 .drawer-icon {
   z-index: 902;
+  display: block;
+  position: relative;
+  width: rem(24);
+  height: rem(24);
+  cursor: pointer;
+  text-align: center;
 
   @include mq('md'){
     display: none;
   }
 }
 
-.drawer-icon__bars {
-  width: $drawer-width;
-  height: rem(12.95);
+.drawer-icon span{
   display: block;
-  position: relative;
-}
-
-.drawer-icon__bar1,
-.drawer-icon__bar2,
-.drawer-icon__bar3 {
   position: absolute;
   width: $drawer-width;
   height: $drawer-height;
-  border-radius: rem(10);
-  background: $drawer-color; //横棒の色を指定
-  top: 0;
-  left: 0;
-  transition: transform 0.5s ease 0s;
+  background: $white;
+  transition: 0.3s ease-in-out;
 }
 
-.drawer-icon__bar1 {
-  top: 0;
+.drawer-icon span:nth-child(1){
+  top: rem(10);
 }
 
-.drawer-icon__bar2 {
-  top: rem(6.5);
+.drawer-icon span:nth-child(2){
+  top: rem(20);
 }
 
-.drawer-icon__bar3 {
-  top: rem(13.5);
+.drawer-icon span:nth-child(3){
+  top: rem(30);
 }
 
-
-.drawer-icon__bars.is-active > .drawer-icon__bar1 {
+.drawer-icon.is-active span:nth-child(1){
+  top: rem(16);
   transform: rotate(-45deg);
-  top: rem(6.5);
 }
 
-.drawer-icon__bars.is-active > .drawer-icon__bar2, 
-.drawer-icon__bars.is-active > .drawer-icon__bar3  {
+.drawer-icon.is-active span:nth-child(2),
+.drawer-icon.is-active span:nth-child(3){
+  top: rem(16);
   transform: rotate(45deg);
-  top: rem(6.5);
 }

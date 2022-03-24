@@ -696,6 +696,14 @@ select::-ms-expand {
 
 .drawer-icon {
   z-index: 902;
+  display: block;
+  position: relative;
+  width: 24px;
+  width: 1.5rem;
+  height: 24px;
+  height: 1.5rem;
+  cursor: pointer;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .drawer-icon {
@@ -703,57 +711,44 @@ select::-ms-expand {
   }
 }
 
-.drawer-icon__bars {
-  width: 24px;
-  height: 12.95px;
-  height: 0.809375rem;
+.drawer-icon span {
   display: block;
-  position: relative;
-}
-
-.drawer-icon__bar1,
-.drawer-icon__bar2,
-.drawer-icon__bar3 {
   position: absolute;
   width: 24px;
   height: 2px;
-  border-radius: 0.625rem;
   background: #fff;
-  top: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 0.5s ease 0s;
-  transition: -webkit-transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.drawer-icon__bar1 {
-  top: 0;
+.drawer-icon span:nth-child(1) {
+  top: 10px;
+  top: 0.625rem;
 }
 
-.drawer-icon__bar2 {
-  top: 6.5px;
-  top: 0.40625rem;
+.drawer-icon span:nth-child(2) {
+  top: 20px;
+  top: 1.25rem;
 }
 
-.drawer-icon__bar3 {
-  top: 13.5px;
-  top: 0.84375rem;
+.drawer-icon span:nth-child(3) {
+  top: 30px;
+  top: 1.875rem;
 }
 
-.drawer-icon__bars.is-active > .drawer-icon__bar1 {
+.drawer-icon.is-active span:nth-child(1) {
+  top: 16px;
+  top: 1rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 6.5px;
-  top: 0.40625rem;
 }
 
-.drawer-icon__bars.is-active > .drawer-icon__bar2,
-.drawer-icon__bars.is-active > .drawer-icon__bar3 {
+.drawer-icon.is-active span:nth-child(2),
+.drawer-icon.is-active span:nth-child(3) {
+  top: 16px;
+  top: 1rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 6.5px;
-  top: 0.40625rem;
 }
 
 .footer {
