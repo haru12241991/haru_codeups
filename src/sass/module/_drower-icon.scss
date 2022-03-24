@@ -9,7 +9,7 @@ $drawer-color: #fff;
   display: block;
   position: relative;
   width: rem(24);
-  height: rem(24);
+  height: rem(13);
   cursor: pointer;
   text-align: center;
 
@@ -28,24 +28,24 @@ $drawer-color: #fff;
 }
 
 .drawer-icon span:nth-child(1){
-  top: rem(10);
+  top: 0;
 }
 
 .drawer-icon span:nth-child(2){
-  top: rem(20);
+  top: rem(6.5);
 }
 
 .drawer-icon span:nth-child(3){
-  top: rem(30);
+  top: rem(13);
 }
 
 .drawer-icon.is-active span:nth-child(1){
-  top: rem(16);
+  top: rem(6);
   transform: rotate(-45deg);
 }
 
 .drawer-icon.is-active span:nth-child(2),
 .drawer-icon.is-active span:nth-child(3){
-  top: rem(16);
+  top: rem(6);
   transform: rotate(45deg);
 }
