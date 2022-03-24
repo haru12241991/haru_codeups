@@ -7,15 +7,14 @@
   margin: 0;
   height: rem(50);
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   z-index: 900;
+  transition: 0.3s ease;
 }
 
  /* MV以下で透過解除 */
- .header
  .header-color-scroll {
-  background: rgba(0, 0, 0, 1);
-  transition: color 0.3s ease-out;
+  background: rgba(0,0,0,1);
 }
 
 .header__inner {

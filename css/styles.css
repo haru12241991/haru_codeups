@@ -883,13 +883,13 @@ select::-ms-expand {
   width: 100%;
   background: rgba(0, 0, 0, .5);
   z-index: 900;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /* MV以下で透過解除 */
-.header .header-color-scroll {
+.header-color-scroll {
   background: black;
-  -webkit-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
 }
 
 .header__inner {
