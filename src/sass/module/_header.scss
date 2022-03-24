@@ -34,13 +34,13 @@
   z-index: 901;
   
   @include mq("md") {
-    padding-top: rem(8);
     margin-left: rem(32);
   }
 }
 
 .header__nav {
   display: flex;
+  align-items: center;
 }
 
 .header__nav__item {
@@ -50,7 +50,6 @@
 }
 
 .header__nav__link {
-  padding: rem(8) 0;
   letter-spacing: 2px;
   line-height: calc(35 / 16);
   display: block;
