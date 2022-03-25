@@ -1760,6 +1760,7 @@ span.swiper-pagination-bullet {
   width: 100%;
   min-height: 100vh;
 }
+
 .mv-content {
   position: absolute;
   content: "";
@@ -1773,6 +1774,7 @@ span.swiper-pagination-bullet {
   text-align: center;
   z-index: 100;
 }
+
 .mv__title {
   color: #fff;
   line-height: 1;
@@ -1786,6 +1788,7 @@ span.swiper-pagination-bullet {
     font-size: 3.125rem;
   }
 }
+
 .mv__text {
   color: #fff;
   line-height: 1;
