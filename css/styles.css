@@ -178,6 +178,7 @@ select::-ms-expand {
     max-width: 71.5625rem;
   }
 }
+
 .background-line::before {
   content: "";
   position: absolute;
@@ -203,6 +204,7 @@ select::-ms-expand {
     bottom: 7.8125rem;
   }
 }
+
 .background-line::after {
   content: "";
   position: absolute;
@@ -214,7 +216,7 @@ select::-ms-expand {
           transform-origin: bottom right;
   -webkit-transform: rotate(-75.09deg);
           transform: rotate(-75.09deg);
-  width: 550.13333vw;
+  width: 511.13333vw;
   z-index: -1;
 }
 @media screen and (min-width: 768px) {

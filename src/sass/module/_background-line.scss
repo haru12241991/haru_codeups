@@ -7,44 +7,43 @@
   
   @include mq('md'){
     max-width: rem(1145);
-    
   }
-  
-  &::before{
-    content: "";
-    position: absolute;
-    right: rem(21);
-    bottom: rem(595);
-    border-bottom: 1px solid $yellow;
-    transform-origin: bottom right;
-    transform: rotate(61.09deg);
-    width: 362.13333vw;
-    z-index: -1;
-    
-    @include mq('md'){
-      transform: rotate(45deg);
-      width: 141.25vw;
-      bottom: rem(125);
-      right: 0;
-      bottom: rem(125);  
-    }
-  }
+}
 
-  &::after{
-    content: "";
-    position: absolute;
-    right: rem(139);
-    bottom: 0;
-    border-bottom: 1px solid $yellow;
-    transform-origin: bottom right;
-    transform: rotate(-75.09deg);
-    width: 550.13333vw;
-     z-index: -1;
-    
-    @include mq('md'){
-      transform: rotate(-45deg);
-      width: 141.25vw;
-      right: 0;
-    }
+.background-line::before{
+  content: "";
+  position: absolute;
+  right: rem(21);
+  bottom: rem(595);
+  border-bottom: 1px solid $yellow;
+  transform-origin: bottom right;
+  transform: rotate(61.09deg);
+  width: 362.13333vw;
+  z-index: -1;
+  
+  @include mq('md'){
+    transform: rotate(45deg);
+    width: 141.25vw;
+    bottom: rem(125);
+    right: 0;
+    bottom: rem(125);  
+  }
+}
+
+.background-line::after{
+  content: "";
+  position: absolute;
+  right: rem(139);
+  bottom: 0;
+  border-bottom: 1px solid $yellow;
+  transform-origin: bottom right;
+  transform: rotate(-75.09deg);
+  width: 511.13333vw;
+   z-index: -1;
+  
+  @include mq('md'){
+    transform: rotate(-45deg);
+    width: 141.25vw;
+    right: 0;
   }
 }
