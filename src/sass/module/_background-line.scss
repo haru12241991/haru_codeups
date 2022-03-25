@@ -1,16 +1,16 @@
 @use "global" as *;
 
-.background-line{
+.background-line {
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   position: relative;
-  
-  @include mq('md'){
+
+  @include mq("md") {
     max-width: rem(1145);
   }
 }
 
-.background-line::before{
+.background-line::before {
   content: "";
   position: absolute;
   right: rem(21);
@@ -20,17 +20,17 @@
   transform: rotate(61.09deg);
   width: 362.13333vw;
   z-index: -1;
-  
-  @include mq('md'){
+
+  @include mq("md") {
     transform: rotate(45deg);
     width: 141.25vw;
     bottom: rem(125);
     right: 0;
-    bottom: rem(125);  
+    bottom: rem(125);
   }
 }
 
-.background-line::after{
+.background-line::after {
   content: "";
   position: absolute;
   right: rem(139);
@@ -39,9 +39,9 @@
   transform-origin: bottom right;
   transform: rotate(-75.09deg);
   width: 511.13333vw;
-   z-index: -1;
-  
-  @include mq('md'){
+  z-index: -1;
+
+  @include mq("md") {
     transform: rotate(-45deg);
     width: 141.25vw;
     right: 0;

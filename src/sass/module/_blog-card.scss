@@ -8,7 +8,7 @@
   transition: all 0.3s 0s ease;
 }
 
-.blog-card:hover{
+.blog-card:hover {
   background: $black;
   color: $white;
 }
@@ -23,7 +23,7 @@
   padding-top: 66.671947%;
   display: block;
 
-  @include mq('md'){
+  @include mq("md") {
     padding-top: 65.671947%;
   }
 }
@@ -51,7 +51,7 @@
   margin-top: rem(2);
   letter-spacing: rem(0.899);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(4);
     letter-spacing: rem(1.2222);
   }
@@ -63,7 +63,7 @@
   margin-top: rem(3);
   letter-spacing: rem(1);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(6);
     letter-spacing: rem(1.222222);
   }
@@ -80,10 +80,10 @@
   padding-top: rem(8);
   padding-left: rem(21);
   padding-right: rem(21);
-  padding-bottom: rem(17) ;
-  
-  @include mq('md'){
-    padding-top: rem(12); 
+  padding-bottom: rem(17);
+
+  @include mq("md") {
+    padding-top: rem(12);
   }
 }
 
@@ -94,13 +94,13 @@
   letter-spacing: rem(0.8);
   color: $black;
 
-  @include mq('md'){
+  @include mq("md") {
     letter-spacing: rem(1);
     padding: rem(5) rem(7);
   }
 }
 
-.blog-card__category:hover{
+.blog-card__category:hover {
   color: $black;
 }
 
@@ -126,8 +126,8 @@
   left: rem(-16);
   padding-left: rem(2);
   text-align: center;
-  
-  @include mq('md'){
+
+  @include mq("md") {
     top: rem(-20);
   }
 }

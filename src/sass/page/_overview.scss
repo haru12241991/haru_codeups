@@ -1,38 +1,37 @@
 @use "global" as *;
 
-.overview{
+.overview {
   margin-top: rem(83);
   position: relative;
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(174);
   }
 }
 
-.overview__content{
-  @include mq('md'){
-    margin-top: rem(-7);   
+.overview__content {
+  @include mq("md") {
+    margin-top: rem(-7);
   }
 }
 
 .overview__body {
   padding-left: rem(20);
 
-  @include mq('md'){
+  @include mq("md") {
     padding-left: 0;
   }
 }
 
-.overview__title{
+.overview__title {
   margin-top: rem(27);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: 0;
   }
 }
 
-.overview__button__wrapper{
+.overview__button__wrapper {
   position: relative;
   z-index: 1;
 }
-

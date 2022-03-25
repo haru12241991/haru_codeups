@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.contact{
-  background: #3D3D3D;
+.contact {
+  background: #3d3d3d;
   padding-top: rem(29);
   padding-bottom: rem(60);
   margin-top: rem(116);
-  
-  @include mq('md'){
+
+  @include mq("md") {
     margin: 0 auto;
     padding-top: rem(81);
     padding-bottom: rem(144);
@@ -14,17 +14,15 @@
   }
 }
 
-.contact-header{
+.contact-header {
   text-align: center;
   line-height: 1;
   position: relative;
   z-index: 1;
-
 }
 
 .contact-header__text {
-  
-  @include mq('md'){
+  @include mq("md") {
     position: absolute;
     font-size: rem(30);
     top: rem(30);
@@ -35,37 +33,37 @@
   }
 }
 
-.contact__body{
+.contact__body {
   margin-top: rem(24);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(16);
   }
 }
 
-.contact__text{
+.contact__text {
   line-height: 1.44444;
   letter-spacing: rem(1.8888);
 
-  @include mq('md'){
+  @include mq("md") {
     text-align: center;
   }
 }
 
-.contact__button__wrapper{
+.contact__button__wrapper {
   position: relative;
   z-index: 1;
   margin-top: rem(46);
   text-align: center;
-  
-  @include mq('md'){
+
+  @include mq("md") {
     margin-top: rem(61);
   }
 }
 
-.contact__button{
-  @include mq('md'){
-    font-size: rem(20); 
+.contact__button {
+  @include mq("md") {
+    font-size: rem(20);
     padding: rem(14) 0;
     text-align: left;
     padding-left: rem(95);

@@ -1,22 +1,20 @@
 @use "global" as *;
 
-.works{
+.works {
   margin-top: rem(82);
 
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(176);
   }
 }
 
-.works__content{
-
-  @include mq('md'){  
+.works__content {
+  @include mq("md") {
     margin-top: rem(-7);
   }
 }
 
-.works__button__wrapper{
+.works__button__wrapper {
   position: relative;
   z-index: 1;
 }
-

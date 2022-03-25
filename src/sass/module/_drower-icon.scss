@@ -13,12 +13,12 @@ $drawer-color: #fff;
   cursor: pointer;
   text-align: center;
 
-  @include mq('md'){
+  @include mq("md") {
     display: none;
   }
 }
 
-.drawer-icon span{
+.drawer-icon span {
   display: block;
   position: absolute;
   width: $drawer-width;
@@ -27,25 +27,25 @@ $drawer-color: #fff;
   transition: 0.3s ease-in-out;
 }
 
-.drawer-icon span:nth-child(1){
+.drawer-icon span:nth-child(1) {
   top: 0;
 }
 
-.drawer-icon span:nth-child(2){
+.drawer-icon span:nth-child(2) {
   top: rem(6.5);
 }
 
-.drawer-icon span:nth-child(3){
+.drawer-icon span:nth-child(3) {
   top: rem(13);
 }
 
-.drawer-icon.is-active span:nth-child(1){
+.drawer-icon.is-active span:nth-child(1) {
   top: rem(6);
   transform: rotate(-45deg);
 }
 
 .drawer-icon.is-active span:nth-child(2),
-.drawer-icon.is-active span:nth-child(3){
+.drawer-icon.is-active span:nth-child(3) {
   top: rem(6);
   transform: rotate(45deg);
 }

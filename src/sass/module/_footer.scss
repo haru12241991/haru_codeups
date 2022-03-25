@@ -3,14 +3,14 @@
 .footer {
   padding: rem(50) 0;
   text-align: center;
-  
-  @include mq('md'){
+
+  @include mq("md") {
     padding: rem(20) 0 rem(35);
     margin: 0 auto;
   }
 }
 
-.footer__inner{
+.footer__inner {
   padding: 0 rem(32);
 }
 
@@ -34,8 +34,7 @@
 }
 
 .footer__nav {
-
-  @include mq('md'){
+  @include mq("md") {
     display: flex;
     margin-top: rem(14);
   }
@@ -50,37 +49,34 @@
   display: none;
 }
 
-.footer__nav__item:nth-child(6){
-
-  @include mq('md'){
-    display: block; 
+.footer__nav__item:nth-child(6) {
+  @include mq("md") {
+    display: block;
   }
 }
 
-.footer__nav__item:nth-child(7){
-
-  @include mq('md'){
+.footer__nav__item:nth-child(7) {
+  @include mq("md") {
     /* ブログを非表示 */
-   display: none;
+    display: none;
   }
 }
 
-.footer__nav__item + .footer__nav__item{
-
-  @include mq('md'){
+.footer__nav__item + .footer__nav__item {
+  @include mq("md") {
     margin-left: rem(34);
   }
 }
 
-.footer__nav__link{
+.footer__nav__link {
   line-height: calc(35 / 16);
   display: inline-block;
   position: relative;
   line-height: 1;
   letter-spacing: rem(1.2222);
   padding: rem(7.3);
-  
-  @include mq('md'){
+
+  @include mq("md") {
     letter-spacing: rem(1.25555);
     padding: rem(7.3) 0;
   }
@@ -109,7 +105,7 @@
   font-size: rem(11);
   letter-spacing: rem(1.11111);
 
-  @include mq('md'){
+  @include mq("md") {
     font-size: rem(15);
     margin-top: rem(74);
     letter-spacing: rem(1.19999);

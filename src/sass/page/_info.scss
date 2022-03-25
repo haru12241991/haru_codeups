@@ -51,7 +51,7 @@
   padding-top: rem(17);
   overflow-wrap: normal;
   display: block;
-  
+
   @include mq("md") {
     padding: 0;
     height: 100%;
@@ -60,7 +60,7 @@
   }
 }
 
-.info__title:hover{
+.info__title:hover {
   text-decoration: underline;
 }
 
@@ -69,8 +69,8 @@
   position: relative;
   z-index: 1;
   margin-top: rem(28);
-  
-  @include mq('md'){
+
+  @include mq("md") {
     margin-top: 0;
     width: rem(134);
     height: rem(30);
@@ -78,7 +78,6 @@
 }
 
 .info__button {
-
   @include mq("md") {
     font-size: rem(16);
     width: 100%;
@@ -92,22 +91,19 @@
 }
 
 .info__button::after {
-
-  @include mq('md'){
+  @include mq("md") {
     background-color: $white;
   }
 }
 
 .info__button::before {
-
-  @include mq('md'){
+  @include mq("md") {
     background-color: $black;
   }
 }
 
 .info__button:hover {
-  
-  @include mq('md'){
+  @include mq("md") {
     border: 1px solid $black;
     color: $white;
   }

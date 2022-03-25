@@ -16,9 +16,9 @@
   }
 }
 
-.card-list__item + .card-list__item{
+.card-list__item + .card-list__item {
   margin-top: rem(25);
-    
+
   @include mq("md") {
     margin: 0;
     margin-left: rem(25);
@@ -26,16 +26,13 @@
 }
 
 .card-list__item:nth-child(3n + 1) {
-  
-  @include mq('md'){
+  @include mq("md") {
     margin-left: 0;
   }
 }
 
 .card-list__item:nth-child(n + 4) {
-
-  @include mq('md'){
+  @include mq("md") {
     margin-top: rem(25);
   }
 }
-

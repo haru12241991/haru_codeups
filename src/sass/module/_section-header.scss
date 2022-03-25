@@ -15,16 +15,16 @@
   opacity: 0.2;
   letter-spacing: rem(2);
 
-  @include mq('md'){
+  @include mq("md") {
     font-size: rem(110);
     letter-spacing: rem(2);
     text-align: left;
   }
 }
 
-.section-header__title-right{
-  @include mq('md'){
-    text-align: right;  
+.section-header__title-right {
+  @include mq("md") {
+    text-align: right;
   }
 }
 
@@ -35,7 +35,7 @@
   margin-top: rem(-7.8);
   letter-spacing: rem(2);
 
-  @include mq('md'){
+  @include mq("md") {
     position: absolute;
     font-size: rem(30);
     top: rem(30);
@@ -43,4 +43,3 @@
     transform: translateX(-50%);
   }
 }
-

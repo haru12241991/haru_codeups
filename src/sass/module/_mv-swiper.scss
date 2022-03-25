@@ -1,7 +1,6 @@
 @use "global" as *;
 
-.mv-swiper{
- 
+.mv-swiper {
 }
 
 .mv-swiper-slide__img {
@@ -10,7 +9,7 @@
   position: relative;
 }
 
-.mv-swiper-slide__img::after{
+.mv-swiper-slide__img::after {
   position: absolute;
   content: "";
   top: 0;

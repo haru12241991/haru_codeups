@@ -522,18 +522,27 @@ select::-ms-expand {
   .description__content {
     background: transparent;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__content-right {
     background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, transparent), color-stop(30%, #333), to(#333));
     background: linear-gradient(90deg, transparent 0%, transparent 30%, #333 30%, #333 100%);
     padding-top: 4.875rem;
     padding-bottom: 4.875rem;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__content-left {
     background: -webkit-gradient(linear, left top, right top, from(#333), color-stop(70%, #333), color-stop(70%, transparent), to(transparent));
     background: linear-gradient(90deg, #333 0%, #333 70%, transparent 70%, transparent 100%);
     padding-top: 5.0625rem;
     padding-bottom: 4.875rem;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__content__wrapper {
     width: 100%;
     max-width: 80rem;
@@ -550,6 +559,9 @@ select::-ms-expand {
     padding-right: 1.5625rem;
     margin: 0 auto;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__content__wrapper-left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -572,12 +584,14 @@ select::-ms-expand {
         flex-shrink: 0;
   }
 }
+
 .description__img::before {
   content: "";
   display: block;
   padding-top: 70%;
 }
-.description__img > img {
+
+.description__img img {
   position: absolute;
   top: 0;
   right: 0;
@@ -611,9 +625,15 @@ select::-ms-expand {
     text-align: left;
     padding: 0;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__body-right {
     margin-right: 2rem;
   }
+}
+
+@media screen and (min-width: 768px) {
   .description__body-left {
     margin-left: 2rem;
   }
@@ -1287,7 +1307,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 span.swiper-pagination-bullet {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   opacity: 1;
   margin: 0 5.55px !important;
   margin: 0 0.346875rem !important;
@@ -1345,7 +1365,7 @@ span.swiper-pagination-bullet {
 }
 
 .contact {
-  background: #3D3D3D;
+  background: #3d3d3d;
   padding-top: 29px;
   padding-top: 1.8125rem;
   padding-bottom: 60px;

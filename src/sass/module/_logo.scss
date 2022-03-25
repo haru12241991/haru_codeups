@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.logo{ 
+.logo {
   display: inline-block;
 }
 
-.logo__img{
+.logo__img {
   width: rem(73);
-  @include mq('md'){
+  @include mq("md") {
     width: rem(94);
   }
 }

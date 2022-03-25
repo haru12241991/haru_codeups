@@ -1,5 +1,5 @@
 @use "global" as *;
-.button{
+.button {
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -19,7 +19,7 @@
   }
 }
 
-.button::after{
+.button::after {
   position: absolute;
   content: "";
   top: 0;
@@ -30,7 +30,7 @@
   z-index: -2;
 }
 
-.button::before{
+.button::before {
   position: absolute;
   content: "";
   top: 0;
@@ -40,13 +40,13 @@
   background-color: $white;
   z-index: -1;
   transform: translateX(-100%);
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
-.button:hover{
+.button:hover {
   color: $black;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: translateX(0);
 }

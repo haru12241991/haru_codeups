@@ -9,7 +9,7 @@
   opacity: 1;
   z-index: 800;
 
-  @include mq('md'){
+  @include mq("md") {
     right: rem(32);
     bottom: rem(32);
   }
@@ -31,7 +31,7 @@
   border: 0px;
   border-top: solid 2px $black;
   border-right: solid 2px $black;
-  transform: rotate(-45deg) translate(-50%,-50%);
+  transform: rotate(-45deg) translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,27 +40,27 @@
   transition: all 0.3s ease;
 }
 
-.page-top a:visited{
+.page-top a:visited {
   background: $white;
 }
 
-.page-top a:visited::before{
+.page-top a:visited::before {
   border-color: $black;
 }
 
-.page-top a:hover{
+.page-top a:hover {
   background: $black;
   border-color: $white;
 }
 
-.page-top a:hover::before{
+.page-top a:hover::before {
   border-color: $white;
 }
 
-.page-top a:active{
+.page-top a:active {
   background: $white;
 }
 
-.page-top a:active::before{
+.page-top a:active::before {
   border-color: $black;
 }
