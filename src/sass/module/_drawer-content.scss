@@ -10,48 +10,48 @@
   background: $bg-black;
   transform: translateX(105%); 
   transition: transform 0.5s ease 0s;
-
-  &.is-active {
-    transform: translateX(0); //.is-activeになったら左側へ出てくる
-  }
-
-  &__items {
-    padding: rem(199) rem(18);
-  }
-  
-  &__item {
-    text-align: center;
-    display: block;
-    
-    &:not(:first-child) {
-      margin-top: rem(18);
-    }
-    
-    & > a {
-      display: inline-block;
-      padding-top: rem(7);
-      padding-bottom: rem(6.2);
-      position: relative;
-      color: $white; 
-      font-size: rem(16);
-      letter-spacing: rem(2);
-  
-      &::after {
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 1px;
-        background: $yellow2; 
-        bottom: 0;
-        left: 0;
-        transition: width 0.3s;
-      }
-  
-      &:hover {
-        &::after {
-          width: 100%;
-        }
-      }
-    }
-  }
 }
+
+.drawer-content.is-active {
+  transform: translateX(0); //.is-activeになったら左側へ出てくる
+}
+
+.drawer-content__items {
+  padding: rem(199) rem(18);
+}
+
+.drawer-content__item {
+  text-align: center;
+  display: block;
+}
+
+.drawer-content__item:not(:first-child) {
+  margin-top: rem(18);
+}
+
+.drawer-content__item a {
+  display: inline-block;
+  padding-top: rem(7);
+  padding-bottom: rem(6.2);
+  position: relative;
+  color: $white; 
+  font-size: rem(16);
+  letter-spacing: rem(2);
+}
+
+.drawer-content__item a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background: $yellow2; 
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.drawer-content__item a:hover::after {
+    width: 100%;
+}
+
+
