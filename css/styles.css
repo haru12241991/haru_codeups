@@ -239,14 +239,17 @@ select::-ms-expand {
   -webkit-transition: all 0.3s 0s ease;
   transition: all 0.3s 0s ease;
 }
+
 .blog-card:hover {
   background: #333;
   color: #fff;
 }
+
 .blog-card__img {
   position: relative;
   width: 100%;
 }
+
 .blog-card__img::before {
   content: "";
   padding-top: 66.671947%;
@@ -257,7 +260,8 @@ select::-ms-expand {
     padding-top: 65.671947%;
   }
 }
-.blog-card__img > img {
+
+.blog-card img {
   position: absolute;
   top: 0;
   left: 0;
@@ -268,6 +272,7 @@ select::-ms-expand {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .blog-card__body {
   padding-left: 21px;
   padding-left: 1.3125rem;
@@ -275,6 +280,7 @@ select::-ms-expand {
   padding-right: 1.4375rem;
   text-align: left;
 }
+
 .blog-card__title {
   font-size: 18px;
   font-size: 1.125rem;
@@ -290,6 +296,7 @@ select::-ms-expand {
     letter-spacing: 0.0763875rem;
   }
 }
+
 .blog-card__text {
   font-size: 14px;
   font-size: 0.875rem;
@@ -305,6 +312,7 @@ select::-ms-expand {
     letter-spacing: 0.076388875rem;
   }
 }
+
 .blog-card__info {
   text-align: left;
   display: -webkit-box;
@@ -334,6 +342,7 @@ select::-ms-expand {
     padding-top: 0.75rem;
   }
 }
+
 .blog-card__category {
   display: inline-block;
   background: #FFEA2E;
@@ -343,15 +352,17 @@ select::-ms-expand {
   letter-spacing: 0.05rem;
   color: #333;
 }
-.blog-card__category:hover {
-  color: #333;
-}
 @media screen and (min-width: 768px) {
   .blog-card__category {
     letter-spacing: 0.0625rem;
     padding: 0.3125rem 0.4375rem;
   }
 }
+
+.blog-card__category:hover {
+  color: #333;
+}
+
 .blog-card__date {
   letter-spacing: 1.3px;
   letter-spacing: 0.08125rem;
@@ -360,6 +371,12 @@ select::-ms-expand {
 .blog-card-new {
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .blog-card-new {
+    top: -1.25rem;
+  }
+}
+
 .blog-card-new::after {
   position: absolute;
   content: "New";
@@ -381,11 +398,6 @@ select::-ms-expand {
   padding-left: 2px;
   padding-left: 0.125rem;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .blog-card-new::after {
-    top: -1.25rem;
-  }
 }
 
 .button {
