@@ -1207,6 +1207,7 @@ select::-ms-expand {
   position: relative;
   z-index: -1;
 }
+
 .section-header__title {
   font-size: 50px;
   font-size: 3.125rem;
@@ -1223,10 +1224,14 @@ select::-ms-expand {
     letter-spacing: 0.125rem;
     text-align: left;
   }
+}
+
+@media screen and (min-width: 768px) {
   .section-header__title-right {
     text-align: right;
   }
 }
+
 .section-header__text {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
