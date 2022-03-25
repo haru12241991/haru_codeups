@@ -456,6 +456,7 @@ select::-ms-expand {
 .button:hover {
   color: #333;
 }
+
 .button:hover::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);

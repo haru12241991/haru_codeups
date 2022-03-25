@@ -45,7 +45,8 @@
 
 .button:hover{
   color: $black;
-  &::before{
-    transform: translateX(0);
-  }
+}
+
+.button:hover::before{
+  transform: translateX(0);
 }
