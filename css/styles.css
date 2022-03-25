@@ -1143,7 +1143,8 @@ select::-ms-expand {
     bottom: 2rem;
   }
 }
-.page-top > a {
+
+.page-top a {
   background: #fff;
   position: relative;
   display: block;
@@ -1152,7 +1153,8 @@ select::-ms-expand {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.page-top > a::before {
+
+.page-top a::before {
   content: "";
   width: 21px;
   width: 1.3125rem;
@@ -1173,23 +1175,29 @@ select::-ms-expand {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.page-top > a:visited {
+
+.page-top a:visited {
   background: #fff;
 }
-.page-top > a:visited::before {
+
+.page-top a:visited::before {
   border-color: #333;
 }
-.page-top > a:hover {
+
+.page-top a:hover {
   background: #333;
   border-color: #fff;
 }
-.page-top > a:hover::before {
+
+.page-top a:hover::before {
   border-color: #fff;
 }
-.page-top > a:active {
+
+.page-top a:active {
   background: #fff;
 }
-.page-top > a:active::before {
+
+.page-top a:active::before {
   border-color: #333;
 }
 
