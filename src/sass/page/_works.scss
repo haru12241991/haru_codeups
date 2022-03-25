@@ -6,18 +6,17 @@
   @include mq('md'){
     margin-top: rem(176);
   }
+}
 
-  &__content{
+.works__content{
 
-    @include mq('md'){  
-      margin-top: rem(-7);
-    }
-  }
-
-  &__button__wrapper{
-    position: relative;
-    z-index: 1;
+  @include mq('md'){  
+    margin-top: rem(-7);
   }
 }
 
+.works__button__wrapper{
+  position: relative;
+  z-index: 1;
+}
 
