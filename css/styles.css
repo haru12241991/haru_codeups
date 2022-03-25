@@ -1426,6 +1426,7 @@ span.swiper-pagination-bullet {
     margin-top: 11rem;
   }
 }
+
 .content__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1440,7 +1441,11 @@ span.swiper-pagination-bullet {
     margin-top: -0.5625rem;
   }
 }
-.content__item1, .content__item2, .content__item3, .content__item4 {
+
+.content__item1,
+.content__item2,
+.content__item3,
+.content__item4 {
   display: block;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1451,7 +1456,20 @@ span.swiper-pagination-bullet {
       flex-basis: 50%;
   position: relative;
 }
-.content__item1::after, .content__item2::after, .content__item3::after, .content__item4::after {
+@media screen and (min-width: 768px) {
+  .content__item1,
+.content__item2,
+.content__item3,
+.content__item4 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+.content__item1::after,
+.content__item2::after,
+.content__item3::after,
+.content__item4::after {
   position: absolute;
   content: "";
   top: 0;
@@ -1464,18 +1482,18 @@ span.swiper-pagination-bullet {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.content__item1:hover::after, .content__item2:hover::after, .content__item3:hover::after, .content__item4:hover::after {
+
+.content__item1:hover:after,
+.content__item2:hover:after,
+.content__item3:hover:after,
+.content__item4:hover:after {
   opacity: 0.6;
 }
-@media screen and (min-width: 768px) {
-  .content__item1, .content__item2, .content__item3, .content__item4 {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-  }
-}
+
 .content__item1 {
   position: relative;
 }
+
 .content__item1::before {
   position: absolute;
   content: "経営理念ページへ";
@@ -1497,9 +1515,11 @@ span.swiper-pagination-bullet {
     font-size: 1.5625rem;
   }
 }
+
 .content__item2 {
   position: relative;
 }
+
 .content__item2::before {
   position: absolute;
   content: "理念1へ";
@@ -1522,9 +1542,11 @@ span.swiper-pagination-bullet {
     letter-spacing: 0.0625rem;
   }
 }
+
 .content__item3 {
   position: relative;
 }
+
 .content__item3::before {
   position: absolute;
   content: "理念2へ";
@@ -1547,9 +1569,11 @@ span.swiper-pagination-bullet {
     letter-spacing: 0.0625rem;
   }
 }
+
 .content__item4 {
   position: relative;
 }
+
 .content__item4::before {
   position: absolute;
   content: "理念3へ";
@@ -1572,10 +1596,12 @@ span.swiper-pagination-bullet {
     letter-spacing: 0.0625rem;
   }
 }
+
 .content__img {
   width: 100%;
   position: relative;
 }
+
 .content__img::before {
   content: "";
   display: block;
@@ -1586,7 +1612,8 @@ span.swiper-pagination-bullet {
     padding-top: 100%;
   }
 }
-.content__img > img {
+
+.content__img img {
   position: absolute;
   top: 0;
   left: 0;
