@@ -1637,6 +1637,7 @@ span.swiper-pagination-bullet {
     padding-top: 2rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .info__inner {
     display: -webkit-box;
@@ -1650,6 +1651,7 @@ span.swiper-pagination-bullet {
             align-items: center;
   }
 }
+
 @media screen and (min-width: 768px) {
   .info__header {
     display: -webkit-box;
@@ -1660,6 +1662,7 @@ span.swiper-pagination-bullet {
             align-items: center;
   }
 }
+
 .info__label {
   font-size: 14px;
   font-size: 0.875rem;
@@ -1675,6 +1678,7 @@ span.swiper-pagination-bullet {
     margin-left: 3.0625rem;
   }
 }
+
 .info__title {
   line-height: 1.4;
   display: block;
@@ -1684,23 +1688,26 @@ span.swiper-pagination-bullet {
     margin-left: 0.875rem;
   }
 }
-.info__title > a {
+
+.info__title a {
   padding-top: 17px;
   padding-top: 1.0625rem;
   word-wrap: normal;
   display: block;
 }
-.info__title > a:hover {
-  text-decoration: underline;
-}
 @media screen and (min-width: 768px) {
-  .info__title > a {
+  .info__title a {
     padding: 0;
     height: 100%;
     padding: 0.25rem 0;
     width: 35.75rem;
   }
 }
+
+.info__title:hover {
+  text-decoration: underline;
+}
+
 .info__button__wrapper {
   text-align: center;
   position: relative;
@@ -1715,6 +1722,7 @@ span.swiper-pagination-bullet {
     height: 1.875rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .info__button {
     font-size: 1rem;
@@ -1726,12 +1734,21 @@ span.swiper-pagination-bullet {
     letter-spacing: 0;
     line-height: 1;
   }
+}
+
+@media screen and (min-width: 768px) {
   .info__button::after {
     background-color: #fff;
   }
+}
+
+@media screen and (min-width: 768px) {
   .info__button::before {
     background-color: #333;
   }
+}
+
+@media screen and (min-width: 768px) {
   .info__button:hover {
     border: 1px solid #333;
     color: #fff;
