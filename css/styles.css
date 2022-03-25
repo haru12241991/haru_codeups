@@ -1087,6 +1087,7 @@ select::-ms-expand {
   height: 100vh;
   position: relative;
 }
+
 .mv-swiper-slide__img::after {
   position: absolute;
   content: "";
@@ -1099,6 +1100,7 @@ select::-ms-expand {
   background-color: #000;
   opacity: 0.2;
 }
+
 .mv-swiper-slide__img::before {
   content: "";
   display: block;
@@ -1109,7 +1111,8 @@ select::-ms-expand {
     padding-top: 66.484375%;
   }
 }
-.mv-swiper-slide__img > img {
+
+.mv-swiper-slide__img img {
   position: absolute;
   top: 0;
   left: 0;
