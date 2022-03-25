@@ -1253,13 +1253,6 @@ select::-ms-expand {
   }
 }
 
-.test {
-  font-size: 20px;
-  font-size: 1.25rem;
-  background-color: #333;
-  color: #fff;
-}
-
 .works-swiper {
   width: 100%;
   padding-bottom: 20px;
@@ -1317,6 +1310,7 @@ span.swiper-pagination-bullet {
     margin-top: 10.875rem;
   }
 }
+
 .blog__items {
   margin-top: 70.5px;
   margin-top: 4.40625rem;
@@ -1326,6 +1320,7 @@ span.swiper-pagination-bullet {
     margin-top: 0.3125rem;
   }
 }
+
 .blog__button__wrapper {
   text-align: center;
   margin-top: 23px;
