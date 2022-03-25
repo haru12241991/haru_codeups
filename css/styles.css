@@ -1351,12 +1351,14 @@ span.swiper-pagination-bullet {
     margin-top: 9rem;
   }
 }
+
 .contact-header {
   text-align: center;
   line-height: 1;
   position: relative;
   z-index: 1;
 }
+
 @media screen and (min-width: 768px) {
   .contact-header__text {
     position: absolute;
@@ -1369,6 +1371,7 @@ span.swiper-pagination-bullet {
     letter-spacing: 0.125rem;
   }
 }
+
 .contact__body {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -1378,6 +1381,7 @@ span.swiper-pagination-bullet {
     margin-top: 1rem;
   }
 }
+
 .contact__text {
   line-height: 1.44444;
   letter-spacing: 1.888px;
@@ -1388,6 +1392,7 @@ span.swiper-pagination-bullet {
     text-align: center;
   }
 }
+
 .contact__button__wrapper {
   position: relative;
   z-index: 1;
@@ -1400,6 +1405,7 @@ span.swiper-pagination-bullet {
     margin-top: 3.8125rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .contact__button {
     font-size: 1.25rem;

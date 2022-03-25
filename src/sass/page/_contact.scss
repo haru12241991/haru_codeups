@@ -12,61 +12,62 @@
     padding-bottom: rem(144);
     margin-top: rem(144);
   }
+}
 
-  &-header{
-    text-align: center;
-    line-height: 1;
-    position: relative;
-    z-index: 1;
+.contact-header{
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+
+}
+
+.contact-header__text {
   
-    &__text {
-      @include mq('md'){
-        position: absolute;
-        font-size: rem(30);
-        top: rem(30);
-        left: 50%;
-        margin-top: rem(40);
-        transform: translateX(-50%);
-        letter-spacing: rem(2);
-      }
-    }
+  @include mq('md'){
+    position: absolute;
+    font-size: rem(30);
+    top: rem(30);
+    left: 50%;
+    margin-top: rem(40);
+    transform: translateX(-50%);
+    letter-spacing: rem(2);
   }
+}
 
-  &__body{
-    margin-top: rem(24);
+.contact__body{
+  margin-top: rem(24);
 
-    @include mq('md'){
-      margin-top: rem(16);
-    }
+  @include mq('md'){
+    margin-top: rem(16);
   }
+}
 
-  &__text{
-    line-height: 1.44444;
-    letter-spacing: rem(1.8888);
+.contact__text{
+  line-height: 1.44444;
+  letter-spacing: rem(1.8888);
 
-    @include mq('md'){
-      text-align: center;
-    }
-  }
-
-  &__button__wrapper{
-    position: relative;
-    z-index: 1;
-    margin-top: rem(46);
+  @include mq('md'){
     text-align: center;
-    
-    @include mq('md'){
-      margin-top: rem(61);
-    }
   }
-  
-  &__button{
-    @include mq('md'){
-      font-size: rem(20); 
-      padding: rem(14) 0;
-      text-align: left;
-      padding-left: rem(95);
-    }
-  }
+}
 
+.contact__button__wrapper{
+  position: relative;
+  z-index: 1;
+  margin-top: rem(46);
+  text-align: center;
+  
+  @include mq('md'){
+    margin-top: rem(61);
+  }
+}
+
+.contact__button{
+  @include mq('md'){
+    font-size: rem(20); 
+    padding: rem(14) 0;
+    text-align: left;
+    padding-left: rem(95);
+  }
 }
