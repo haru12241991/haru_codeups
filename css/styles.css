@@ -789,10 +789,12 @@ select::-ms-expand {
     margin: 0 auto;
   }
 }
+
 .footer__inner {
   padding: 0 32px;
   padding: 0 2rem;
 }
+
 @media screen and (min-width: 768px) {
   .footer__content {
     display: -webkit-box;
@@ -806,6 +808,7 @@ select::-ms-expand {
             justify-content: space-between;
   }
 }
+
 .footer__logo {
   display: inline-block;
   margin: 0 auto;
@@ -817,6 +820,7 @@ select::-ms-expand {
     width: 4.5rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .footer__nav {
     display: -webkit-box;
@@ -825,28 +829,35 @@ select::-ms-expand {
     margin-top: 0.875rem;
   }
 }
+
 .footer__nav__item {
   display: block;
 }
+
 .footer__nav__item:nth-child(6) {
   /* 自社メディアを非表示 */
   display: none;
 }
+
 @media screen and (min-width: 768px) {
-  .footer__nav__item {
-    /* 自社メディアを表示 */
-    /* ブログを非表示 */
-  }
   .footer__nav__item:nth-child(6) {
     display: block;
   }
+}
+
+@media screen and (min-width: 768px) {
   .footer__nav__item:nth-child(7) {
+    /* ブログを非表示 */
     display: none;
   }
+}
+
+@media screen and (min-width: 768px) {
   .footer__nav__item + .footer__nav__item {
     margin-left: 2.125rem;
   }
 }
+
 .footer__nav__link {
   line-height: 2.1875;
   display: inline-block;
@@ -863,6 +874,7 @@ select::-ms-expand {
     padding: 0.45625rem 0;
   }
 }
+
 .footer__nav__link::after {
   position: absolute;
   bottom: 0;
@@ -880,10 +892,12 @@ select::-ms-expand {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
+
 .footer__nav__link:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
+
 .footer-copyright {
   display: inline-block;
   margin-top: 29px;
