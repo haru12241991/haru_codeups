@@ -3,55 +3,36 @@
 .overview{
   margin-top: rem(83);
   position: relative;
-  
-  
-  /* 背景線 */
- /*  &::before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: rem(1388);
-    top: rem(-600);
-    left: 0;
-    background-image: linear-gradient(to right bottom, transparent 50%, $yellow 50.1%, $yellow calc(50% + 1px), transparent calc(50.1% + 1px));
-    z-index: -1;
-    
-    @include mq('md'){
-      width: 94.6875%;
-      height: rem(1212);
-      top: rem(-177); 
-    }  
-  } */
 
   @include mq('md'){
     margin-top: rem(174);
   }
+}
 
-  &__content{
-    @include mq('md'){
-      margin-top: rem(-7);   
-    }
+.overview__content{
+  @include mq('md'){
+    margin-top: rem(-7);   
   }
+}
 
-  &__body {
-    padding-left: rem(20);
+.overview__body {
+  padding-left: rem(20);
 
-    @include mq('md'){
-      padding-left: 0;
-    }
+  @include mq('md'){
+    padding-left: 0;
   }
+}
 
-  &__title{
-    margin-top: rem(27);
+.overview__title{
+  margin-top: rem(27);
 
-    @include mq('md'){
-      margin-top: 0;
-    }
+  @include mq('md'){
+    margin-top: 0;
   }
+}
 
-  &__button__wrapper{
-    position: relative;
-    z-index: 1;
-  }
+.overview__button__wrapper{
+  position: relative;
+  z-index: 1;
 }
 
