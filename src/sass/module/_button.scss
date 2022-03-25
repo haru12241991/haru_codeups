@@ -12,40 +12,40 @@
   overflow: hidden;
   position: relative;
 
-  &::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $black;
-    z-index: -2;
-  }
-  
-  &::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $white;
-    z-index: -1;
-    transform: translateX(-100%);
-    transition: 0.3s ease-in-out; 
-  }
-
-  &:hover{
-    color: $black;
-    &::before{
-      transform: translateX(0);
-    }
-  }
-
   @include mq("md") {
     max-width: rem(360);
     padding: rem(17) 0;
     font-size: rem(16);
+  }
+}
+
+.button::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black;
+  z-index: -2;
+}
+
+.button::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out; 
+}
+
+.button:hover{
+  color: $black;
+  &::before{
+    transform: translateX(0);
   }
 }

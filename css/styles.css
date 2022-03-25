@@ -417,6 +417,14 @@ select::-ms-expand {
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .button {
+    max-width: 22.5rem;
+    padding: 1.0625rem 0;
+    font-size: 1rem;
+  }
+}
+
 .button::after {
   position: absolute;
   content: "";
@@ -427,6 +435,7 @@ select::-ms-expand {
   background-color: #333;
   z-index: -2;
 }
+
 .button::before {
   position: absolute;
   content: "";
@@ -441,19 +450,13 @@ select::-ms-expand {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
 .button:hover {
   color: #333;
 }
 .button:hover::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-@media screen and (min-width: 768px) {
-  .button {
-    max-width: 22.5rem;
-    padding: 1.0625rem 0;
-    font-size: 1rem;
-  }
 }
 
 .card-lists {
