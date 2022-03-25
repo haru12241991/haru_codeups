@@ -28,7 +28,7 @@
   }
 }
 
-.blog-card img {
+.blog-card__img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@
   padding: rem(5) rem(5);
   letter-spacing: rem(0.8);
   color: $black;
-  
+
   @include mq('md'){
     letter-spacing: rem(1);
     padding: rem(5) rem(7);
@@ -110,10 +110,6 @@
 
 .blog-card-new {
   position: relative;
-
-  @include mq('md'){
-    top: rem(-20);
-  }
 }
 
 .blog-card-new::after {
@@ -130,4 +126,8 @@
   left: rem(-16);
   padding-left: rem(2);
   text-align: center;
+  
+  @include mq('md'){
+    top: rem(-20);
+  }
 }

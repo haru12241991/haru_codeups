@@ -261,7 +261,7 @@ select::-ms-expand {
   }
 }
 
-.blog-card img {
+.blog-card__img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -371,11 +371,6 @@ select::-ms-expand {
 .blog-card-new {
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .blog-card-new {
-    top: -1.25rem;
-  }
-}
 
 .blog-card-new::after {
   position: absolute;
@@ -398,6 +393,11 @@ select::-ms-expand {
   padding-left: 2px;
   padding-left: 0.125rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .blog-card-new::after {
+    top: -1.25rem;
+  }
 }
 
 .button {
@@ -479,8 +479,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .card-list__item + .card-list__item {
+    margin: 0;
     margin-left: 1.5625rem;
-    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {

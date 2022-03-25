@@ -6,7 +6,6 @@
 }
 
 .card-list__item {
-  
   width: 100%;
   max-width: rem(600);
   margin: auto;
@@ -15,8 +14,8 @@
     margin-top: rem(25);
     
     @include mq("md") {
+      margin: 0;
       margin-left: rem(25);
-      margin-top: 0;
     }
   }
 
