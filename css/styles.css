@@ -476,6 +476,13 @@ select::-ms-expand {
   max-width: 37.5rem;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: 100%;
+    max-width: calc(33.3333% - 1.04167rem);
+  }
+}
+
 .card-list__item + .card-list__item {
   margin-top: 25px;
   margin-top: 1.5625rem;
@@ -486,14 +493,14 @@ select::-ms-expand {
     margin-left: 1.5625rem;
   }
 }
+
 @media screen and (min-width: 768px) {
-  .card-list__item {
-    width: 100%;
-    max-width: calc(33.3333% - 1.04167rem);
-  }
   .card-list__item:nth-child(3n+1) {
     margin-left: 0;
   }
+}
+
+@media screen and (min-width: 768px) {
   .card-list__item:nth-child(n+4) {
     margin-top: 1.5625rem;
   }
