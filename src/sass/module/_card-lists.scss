@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 
-.card-list__item {
+.card-lists__item {
   width: 100%;
   max-width: rem(600);
   margin: auto;
@@ -16,7 +16,7 @@
   }
 }
 
-.card-list__item + .card-list__item {
+.card-lists__item + .card-lists__item {
   margin-top: rem(25);
 
   @include mq("md") {
@@ -25,13 +25,13 @@
   }
 }
 
-.card-list__item:nth-child(3n + 1) {
+.card-lists__item:nth-child(3n + 1) {
   @include mq("md") {
     margin-left: 0;
   }
 }
 
-.card-list__item:nth-child(n + 4) {
+.card-lists__item:nth-child(n + 4) {
   @include mq("md") {
     margin-top: rem(25);
   }
