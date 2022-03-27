@@ -91,7 +91,7 @@
         <div class="u-desktop header__nav header-nav">
           <ul class="header-nav__items">
             <li class="header-nav__item">
-              <a  href="#">トップ</a>
+              <a href="#">トップ</a>
             </li>
             <li class="header-nav__item">
               <a href="#info">お知らせ</a>
@@ -202,57 +202,41 @@
       </section>
 
       <!-- 制作実績 -->
-      <section id="works" class="works description">
-        <div class="works__inner description__inner inner">
-          <div class="works__header description__header section-header">
-            <h2
-              class="
-                works__header__title
-                description__header__title
-                section-header__title section-header__title-right
-              "
-            >
+      <section id="works" class="works top-works">
+        <div class="works__inner inner">
+          <div class="works__header section-header">
+            <h2 class="section-header__title section-header__title--right">
               Works
             </h2>
-            <p
-              class="
-                works__header__text
-                description__header__text
-                section-header__text
-              "
-            >
-              制作実績
-            </p>
+            <p class="section-header__text">制作実績</p>
           </div>
         </div>
-        <div
-          class="works__content description__content description__content-right"
-        >
-          <div class="works__content__wrapper description__content__wrapper">
-            <div class="works-swiper">
+        <div class="works__background">
+          <div class="works__content">
+            <div class="works__swiper">
               <!-- スライダーのコンテナ -->
-              <div class="swiper works-swiper__content">
+              <div class="js-works__swiper swiper">
                 <!-- スライダーのwrapper -->
-                <div class="swiper-wrapper works-swiper-wrapper">
+                <div class="swiper-wrapper">
                   <!-- スライド -->
-                  <div class="swiper-slide works-swiper-slide">
-                    <div class="description__img works__img">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img">
                       <img
                         src="./images/common/works-img1.png"
                         alt="制作実績画像1"
                       />
                     </div>
                   </div>
-                  <div class="swiper-slide works-swiper-slide">
-                    <div class="description__img works__img">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img">
                       <img
                         src="./images/common/works-img2.png"
                         alt="制作実績画像2"
                       />
                     </div>
                   </div>
-                  <div class="swiper-slide works-swiper-slide">
-                    <div class="description__img works__img">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img">
                       <img
                         src="./images/common/works-img3.png"
                         alt="制作実績画像3"
@@ -262,27 +246,28 @@
                 </div>
               </div>
               <!-- swiperページネーション -->
-              <div class="works-swiper-pagination__wrapper">
-                <div class="swiper-pagination works-swiper-pagination"></div>
+              <!-- works__paginationの中にswiper-paginationを入れて書くのは大丈夫なのでしょうか… -->
+              <div class="works__pagination">
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="works__body description__body description__body-left">
-              <h3 class="works__title description__title">
+            <div class="works__body">
+              <h3 class="works__title">
                 メインタイトルが入ります。
               </h3>
-              <p class="works__text description__text">
+              <p class="works__text">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </p>
-              <div class="works__button__wrapper">
-                <a href="#" class="works__button button description__button"
+              <div class="works__button">
+                <a href="#" class="button"
                   >詳しく見る</a
                 >
               </div>
             </div>
           </div>
+          <!-- 背景線 -->
+          <div class="background-line"></div>
         </div>
-        <!-- 背景線 -->
-        <div class="background-line"></div>
       </section>
 
       <!-- 企業概要 -->

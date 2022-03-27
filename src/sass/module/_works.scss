@@ -1,20 +1,142 @@
 @use "global" as *;
 
-.works {
-  margin-top: rem(82);
-
+.works{
   @include mq("md") {
-    margin-top: rem(176);
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
-.works__content {
+.works__header{
+  position: relative;
+  z-index: -1;
+}
+
+.works__background{
+  background: $black;
+  margin-top: rem(52);
+
   @include mq("md") {
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, $black 30%, $black 100%);
+    padding-top: rem(78);
+    padding-bottom: rem(78);
     margin-top: rem(-7);
   }
 }
 
-.works__button__wrapper {
+.works__content{
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(1280);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: 0 auto;
+  }
+}
+
+.works__swiper{
+  width: 100%;
+  padding-bottom: rem(20);
+
+  @include mq("md") {
+    max-width: rem(557);
+    height: 100%;
+    padding-bottom: 0;
+  }
+}
+
+.works__pagination{
+  position: relative;
+
+  @include mq("md") {
+    margin-top: rem(2);
+  }
+}
+
+.js-works__swiper .swiper-slide__img{
+  position: relative;
+  width: 100%;
+
+  @include mq("md") {
+    width: rem(557);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+.js-works__swiper .swiper-slide__img::before{
+  content: "";
+  display: block;
+  padding-top: 70%;
+}
+
+.js-works__swiper .swiper-slide__img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works__body{
+  text-align: center;
+  padding-left: rem(21);
+  padding-right: rem(21);
+  padding-bottom: rem(16);
+
+  @include mq("md") {
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: rem(510);
+    text-align: left;
+    padding: 0;
+    margin-left: rem(32);
+  }
+}
+
+.works__title{
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: 1;
+  letter-spacing: rem(2);
+  margin-top: rem(7);
+  text-align: center;
+
+  @include mq("md") {
+    text-align: left;
+    font-size: rem(25);
+    margin-top: 0;
+    letter-spacing: rem(0.5);
+  }
+}
+
+.works__text{
+  text-align: left;
+  font-weight: $normal;
+  line-height: 1.43333;
+  letter-spacing: rem(1.83333);
+  margin-top: rem(28);
+
+  @include mq("md") {
+    margin-top: rem(41);
+    line-height: 2.19999;
+    letter-spacing: rem(0.4999);
+  }
+}
+
+.works__button{
+  margin-top: rem(28);
   position: relative;
   z-index: 1;
+
+  @include mq("md") {
+    margin-top: rem(46);
+  }
 }
