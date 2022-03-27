@@ -1,37 +1,125 @@
 @use "global" as *;
 
 .overview {
-  margin-top: rem(83);
-  position: relative;
-
   @include mq("md") {
-    margin-top: rem(174);
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
-.overview__content {
+.overview__header.section-header{
+  position: relative;
+  z-index: -1;
+}
+
+.overview__background {
+  background: $black;
+  margin-top: rem(52);
+
   @include mq("md") {
+    background: linear-gradient(90deg, $black 0%, $black 70%, transparent 70%, transparent 100%);
+    padding-top: rem(81);
+    padding-bottom: rem(78);
     margin-top: rem(-7);
   }
 }
 
+.overview__content{
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(1280);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: 0 auto;
+  }
+}
+
+.overview__img{
+  position: relative;
+  width: 100%;
+
+  @include mq("md") {
+    width: rem(557);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+.overview__img::before{
+  content: "";
+  display: block;
+  padding-top: 70%;
+}
+
+.overview__img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .overview__body {
-  padding-left: rem(20);
+  text-align: center;
+  padding-left: rem(21);
+  padding-right: rem(21);
+  padding-bottom: rem(16);
 
   @include mq("md") {
     padding-left: 0;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: rem(510);
+    text-align: left;
+    padding: 0;
+    margin-right: rem(32);
   }
 }
 
 .overview__title {
+  font-size: rem(20);
+  font-weight: $normal;
+  line-height: 1;
+  letter-spacing: rem(2);
+  text-align: center;
   margin-top: rem(27);
 
   @include mq("md") {
+    text-align: left;
+    font-size: rem(25);
     margin-top: 0;
+    letter-spacing: rem(0.5);
   }
 }
 
-.overview__button__wrapper {
+.overview__text{
+  text-align: left;
+  font-weight: $normal;
+  line-height: 1.43333;
+  letter-spacing: rem(1.83333);
+  margin-top: rem(28);
+
+  @include mq("md") {
+    margin-top: rem(41);
+    line-height: 2.19999;
+    letter-spacing: rem(0.4999);
+  }
+}
+
+.overview__button{
   position: relative;
   z-index: 1;
+  margin-top: rem(28);
+
+  @include mq("md") {
+    margin-top: rem(46);
+  }
 }
