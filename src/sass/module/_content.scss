@@ -20,10 +20,7 @@
   }
 }
 
-.content__item1,
-.content__item2,
-.content__item3,
-.content__item4 {
+.content__item {
   display: block;
   flex-grow: 1;
   flex-shrink: 0;
@@ -35,10 +32,7 @@
   }
 }
 
-.content__item1::after,
-.content__item2::after,
-.content__item3::after,
-.content__item4::after {
+.content__item::after{
   position: absolute;
   content: "";
   top: 0;
@@ -51,20 +45,13 @@
   transition: all 0.3s ease;
 }
 
-.content__item1:hover:after,
-.content__item2:hover:after,
-.content__item3:hover:after,
-.content__item4:hover:after {
+.content__item:hover:after{
   opacity: 0.6;
 }
 
-.content__item1 {
-  position: relative;
-}
-
-.content__item1::before {
+.content__item .content__title{
   position: absolute;
-  content: "経営理念ページへ";
+  content: "";
   width: 100%;
   top: 50%;
   left: 50%;
@@ -77,75 +64,6 @@
 
   @include mq("md") {
     font-size: rem(25);
-  }
-}
-
-.content__item2 {
-  position: relative;
-}
-
-.content__item2::before {
-  position: absolute;
-  content: "理念1へ";
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  font-size: rem(20);
-  text-align: center;
-  line-height: 1;
-  letter-spacing: rem(2);
-
-  @include mq("md") {
-    font-size: rem(25);
-    letter-spacing: rem(1);
-  }
-}
-
-.content__item3 {
-  position: relative;
-}
-
-.content__item3::before {
-  position: absolute;
-  content: "理念2へ";
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  font-size: rem(20);
-  text-align: center;
-  line-height: 1;
-  letter-spacing: rem(2);
-
-  @include mq("md") {
-    font-size: rem(25);
-    letter-spacing: rem(1);
-  }
-}
-
-.content__item4 {
-  position: relative;
-}
-
-.content__item4::before {
-  position: absolute;
-  content: "理念3へ";
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  font-size: rem(20);
-  text-align: center;
-  line-height: 1;
-  letter-spacing: rem(2);
-
-  @include mq("md") {
-    font-size: rem(25);
-    letter-spacing: rem(1);
   }
 }
 
