@@ -33,42 +33,42 @@
   }
 }
 
-.footer__nav {
+.footer-nav {
   @include mq("md") {
     display: flex;
     margin-top: rem(14);
   }
 }
 
-.footer__nav__item {
+.footer-nav__item {
   display: block;
 }
 
-.footer__nav__item:nth-child(6) {
+.footer-nav__item:nth-child(6) {
   /* 自社メディアを非表示 */
   display: none;
 }
 
-.footer__nav__item:nth-child(6) {
+.footer-nav__item:nth-child(6) {
   @include mq("md") {
     display: block;
   }
 }
 
-.footer__nav__item:nth-child(7) {
+.footer-nav__item:nth-child(7) {
   @include mq("md") {
     /* ブログを非表示 */
     display: none;
   }
 }
 
-.footer__nav__item + .footer__nav__item {
+.footer-nav__item + .footer-nav__item {
   @include mq("md") {
     margin-left: rem(34);
   }
 }
 
-.footer__nav__link {
+.footer-nav__item a{
   line-height: calc(35 / 16);
   display: inline-block;
   position: relative;
@@ -82,7 +82,7 @@
   }
 }
 
-.footer__nav__link::after {
+.footer-nav__link::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -95,11 +95,11 @@
   transition: transform 0.3s;
 }
 
-.footer__nav__link:hover::after {
+.footer-nav__link:hover::after {
   transform: scale(1, 1);
 }
 
-.footer-copyright {
+.footer__copyright {
   display: inline-block;
   margin-top: rem(29);
   font-size: rem(11);
