@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.info {
+.info{
   padding-top: rem(24);
 
   @include mq("md") {
@@ -11,7 +11,7 @@
   }
 }
 
-.info__inner {
+.info__inner{
   @include mq("md") {
     display: flex;
     justify-content: space-between;
@@ -19,14 +19,14 @@
   }
 }
 
-.info__header {
+.info__header{
   @include mq("md") {
     display: flex;
     align-items: center;
   }
 }
 
-.info__label {
+.info__label{
   font-size: rem(14);
   display: inline-block;
   padding: rem(4) rem(20.5);
@@ -38,7 +38,7 @@
   }
 }
 
-.info__title {
+.info__title{
   line-height: 1.4;
   display: block;
 
@@ -47,7 +47,7 @@
   }
 }
 
-.info__title a {
+.info__title a{
   padding-top: rem(17);
   overflow-wrap: normal;
   display: block;
@@ -60,11 +60,11 @@
   }
 }
 
-.info__title:hover {
+.info__title:hover{
   text-decoration: underline;
 }
 
-.info__button__wrapper {
+.info__button{
   text-align: center;
   position: relative;
   z-index: 1;
@@ -77,7 +77,7 @@
   }
 }
 
-.info__button {
+.button--news {
   @include mq("md") {
     font-size: rem(16);
     width: 100%;
@@ -90,19 +90,19 @@
   }
 }
 
-.info__button::after {
+.button--news::after {
   @include mq("md") {
     background-color: $white;
   }
 }
 
-.info__button::before {
+.button--news::before {
   @include mq("md") {
     background-color: $black;
   }
 }
 
-.info__button:hover {
+.button--news:hover {
   @include mq("md") {
     border: 1px solid $black;
     color: $white;
