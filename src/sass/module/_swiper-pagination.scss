@@ -1,16 +1,5 @@
 @use "global" as *;
 
-.works-swiper {
-  width: 100%;
-  padding-bottom: rem(20);
-
-  @include mq("md") {
-    max-width: rem(557);
-    height: 100%;
-    padding-bottom: 0;
-  }
-}
-
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: inline-block;
   bottom: rem(-21);
@@ -34,10 +23,3 @@ span.swiper-pagination-bullet {
   }
 }
 
-.works-swiper-pagination__wrapper {
-  position: relative;
-
-  @include mq("md") {
-    margin-top: rem(2);
-  }
-}
