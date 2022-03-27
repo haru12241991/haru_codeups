@@ -3,7 +3,7 @@
 .background-line {
   width: 100%;
   margin: 0 auto;
-  position: relative;z-index: 100;
+  position: relative;
 
   @include mq("md") {
     max-width: rem(1212);
