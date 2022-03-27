@@ -4,13 +4,11 @@
   background: #3d3d3d;
   padding-top: rem(29);
   padding-bottom: rem(60);
-  margin-top: rem(116);
 
   @include mq("md"){
     margin: 0 auto;
     padding-top: rem(81);
     padding-bottom: rem(144);
-    margin-top: rem(144);
   }
 }
 
