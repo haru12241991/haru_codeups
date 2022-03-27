@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.top-info{
+  margin-top: rem(24);
+
+  @include mq('md'){
+    margin-top: rem(32);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
