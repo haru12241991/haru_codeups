@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.header-nav{
+  height: inherit;
+}
+
+.header-nav__items{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header-nav__item{
+  height: inherit;
+}
+
+.header-nav__item a{
+  color: $white;
+  letter-spacing: 2px;
+  line-height: calc(35 / 16);
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: inherit;
+  padding: 0 rem(16);
+}
+
+.header-nav__item a::after {
+  position: absolute;
+  content: "";
+  width: rem(70);
+  height: 1px;
+  background: $yellow2;
+  bottom: rem(9);
+  left: 50%;
+  transform: translateX(-50%) scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-nav__item a:hover::after {
+  transform: translateX(-50%) scale(1, 1);
+}
+
+/* 最後のリストには黄色い下線の表示をしない */
+.header-nav__item:last-child a::after{
+  content: none;
+}
+
+.header-nav__item.header-nav__item--white{
+  margin-left: rem(16);
+}
+
+.header-nav__item.header-nav__item--white a{
+  color: $black;
+  padding: 0 rem(32);
+  overflow: hidden;
+}
+
+.header-nav__item.header-nav__item--white a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $black;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+}
+
+.header-nav__item.header-nav__item--white a span::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  z-index: -2;
+}
+
+.header-nav__item.header-nav__item--white a:hover{
+  color: $white;
+}
+
+.header-nav__item.header-nav__item--white a:hover::before{
+  transform: translateX(0);
+}
