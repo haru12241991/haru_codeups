@@ -2,19 +2,14 @@
 
 .content {
   position: relative;
-  margin: rem(108) auto 0;
   width: 100%;
-
-  @include mq("md") {
-    margin-top: rem(176);
-  }
 }
 
 .content__body {
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(53);
-
+  
   @include mq("md") {
     margin-top: rem(-9);
   }
@@ -26,6 +21,7 @@
   flex-shrink: 0;
   flex-basis: 50%;
   position: relative;
+  z-index: 100;
 
   @include mq("md") {
     flex-basis: 25%;
