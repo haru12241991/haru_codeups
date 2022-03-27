@@ -3,10 +3,10 @@
 .background-line {
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  position: relative;z-index: 100;
 
   @include mq("md") {
-    max-width: rem(1145);
+    max-width: rem(1212);
   }
 }
 
@@ -26,7 +26,7 @@
     width: 141.25vw;
     bottom: rem(125);
     right: 0;
-    bottom: rem(125);
+    bottom: rem(16);
   }
 }
 
@@ -45,5 +45,6 @@
     transform: rotate(-45deg);
     width: 141.25vw;
     right: 0;
+    bottom: rem(-44);
   }
 }
