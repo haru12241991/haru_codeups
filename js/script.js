@@ -11,7 +11,7 @@ jQuery(function ($) {
     }
   });
 
-  //mv-swiper
+  //js-mv__swiper
   let swipeOption = {
     loop: true,
     effect: "fade",
@@ -22,7 +22,7 @@ jQuery(function ($) {
     },
     speed: 2000,
   };
-  new Swiper(".mv-swiper", swipeOption);
+  new Swiper(".js-mv__swiper", swipeOption);
 
   // works-swiper
   const swiper = new Swiper(".works-swiper__content", {
