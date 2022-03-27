@@ -1,38 +1,38 @@
 @use "global" as *;
 
-.card-lists {
+.card-lists{
   display: flex;
   flex-wrap: wrap;
 }
 
-.card-lists__item {
+.card-lists__item{
   width: 100%;
   max-width: rem(600);
   margin: auto;
 
-  @include mq("md") {
+  @include mq("md"){
     width: 100%;
     max-width: calc(33.3333% - rem(25) * 2 / 3);
   }
 }
 
-.card-lists__item + .card-lists__item {
+.card-lists__item + .card-lists__item{
   margin-top: rem(25);
 
-  @include mq("md") {
+  @include mq("md"){
     margin: 0;
     margin-left: rem(25);
   }
 }
 
-.card-lists__item:nth-child(3n + 1) {
-  @include mq("md") {
+.card-lists__item:nth-child(3n + 1){
+  @include mq("md"){
     margin-left: 0;
   }
 }
 
-.card-lists__item:nth-child(n + 4) {
-  @include mq("md") {
+.card-lists__item:nth-child(n + 4){
+  @include mq("md"){
     margin-top: rem(25);
   }
 }
