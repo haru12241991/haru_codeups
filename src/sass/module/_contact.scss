@@ -59,7 +59,7 @@
   }
 }
 
-.contact__button button{
+.button.button--contact{
   @include mq("md"){
     font-size: rem(20);
     padding: rem(14) 0;
