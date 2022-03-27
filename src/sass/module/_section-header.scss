@@ -22,7 +22,7 @@
   }
 }
 
-.section-header__title-right {
+.section-header__title.section-header__title--right {
   @include mq("md") {
     text-align: right;
   }
