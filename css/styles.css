@@ -1455,11 +1455,15 @@ select::-ms-expand {
 }
 
 .logo__img {
+  display: block;
+}
+
+.logo__img img {
   width: 73px;
   width: 4.5625rem;
 }
 @media screen and (min-width: 768px) {
-  .logo__img {
+  .logo__img img {
     width: 5.875rem;
   }
 }
