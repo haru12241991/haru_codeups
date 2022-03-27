@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.top-content{
+  margin: rem(108) auto 0;
+
+  @include mq("md") {
+    margin-top: rem(176);
+  }
+}
