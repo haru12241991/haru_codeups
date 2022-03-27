@@ -1,13 +1,9 @@
 @use "global" as *;
 
 .info{
-  padding-top: rem(24);
-
   @include mq("md") {
     width: 100%;
     max-width: rem(1093);
-    margin: 0 auto;
-    padding-top: rem(32);
   }
 }
 

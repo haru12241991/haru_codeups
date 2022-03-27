@@ -1425,16 +1425,10 @@ select::-ms-expand {
   display: flex;
   align-items: center;
 } */
-.info {
-  padding-top: 24px;
-  padding-top: 1.5rem;
-}
 @media screen and (min-width: 768px) {
   .info {
     width: 100%;
     max-width: 68.3125rem;
-    margin: 0 auto;
-    padding-top: 2rem;
   }
 }
 
@@ -1915,5 +1909,17 @@ span.swiper-pagination-bullet {
 .works__button__wrapper {
   position: relative;
   z-index: 1;
+}
+
+.top-info {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .top-info {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
