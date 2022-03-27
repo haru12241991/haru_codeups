@@ -25,7 +25,7 @@ jQuery(function ($) {
   new Swiper(".js-mv__swiper", swipeOption);
 
   // works-swiper
-  const swiper = new Swiper(".works-swiper__content", {
+  const swiper = new Swiper(".js-works__swiper", {
     slidesPerView: 1,
     loop: true,
 
