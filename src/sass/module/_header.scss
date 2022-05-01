@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.header {
+.l-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,11 +13,11 @@
 }
 
 /* MV以下で透過解除 */
-.header-color-scroll {
+.l-header-color-scroll {
   background: rgba(0, 0, 0, 1);
 }
 
-.header__inner {
+.l-header__inner {
   height: inherit;
   align-items: center;
   display: flex;
@@ -31,6 +31,6 @@
   }
 }
 
-.header__logo {
+.l-header__logo {
   z-index: 901;
 }

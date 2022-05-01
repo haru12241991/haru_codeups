@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.header-nav{
+.c-header-nav{
   height: inherit;
 }
 
-.header-nav__items{
+.c-header-nav__items{
   display: flex;
   align-items: center;
   height: inherit;
 }
 
-.header-nav__item{
+.c-header-nav__item{
   height: inherit;
 }
 
-.header-nav__item a{
+.c-header-nav__item a{
   color: $white;
   letter-spacing: 2px;
   line-height: calc(35 / 16);
@@ -25,7 +25,7 @@
   padding: 0 rem(16);
 }
 
-.header-nav__item a::after {
+.c-header-nav__item a::after {
   position: absolute;
   content: "";
   width: rem(70);
@@ -38,26 +38,26 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.header-nav__item a:hover::after {
+.c-header-nav__item a:hover::after {
   transform: translateX(-50%) scale(1, 1);
 }
 
 /* 最後のリストには黄色い下線の表示をしない */
-.header-nav__item:last-child a::after{
+.c-header-nav__item:last-child a::after{
   content: none;
 }
 
-.header-nav__item.header-nav__item--white{
+.c-header-nav__item.c-header-nav__item--white{
   margin-left: rem(16);
 }
 
-.header-nav__item.header-nav__item--white a{
+.c-header-nav__item.c-header-nav__item--white a{
   color: $black;
   padding: 0 rem(32);
   overflow: hidden;
 }
 
-.header-nav__item.header-nav__item--white a::before {
+.c-header-nav__item.c-header-nav__item--white a::before {
   position: absolute;
   content: "";
   top: 0;
@@ -70,7 +70,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.header-nav__item.header-nav__item--white a span::after {
+.c-header-nav__item.c-header-nav__item--white a span::after {
   position: absolute;
   content: "";
   top: 0;
@@ -81,10 +81,10 @@
   z-index: -2;
 }
 
-.header-nav__item.header-nav__item--white a:hover{
+.c-header-nav__item.c-header-nav__item--white a:hover{
   color: $white;
 }
 
-.header-nav__item.header-nav__item--white a:hover::before{
+.c-header-nav__item.c-header-nav__item--white a:hover::before{
   transform: translateX(0);
 }
