@@ -5,9 +5,9 @@ jQuery(function ($) {
   $(window).on("scroll", function () {
     const sliderHeight = $(".mv").height();
     if (sliderHeight < $(this).scrollTop()) {
-      $(".js-header").addClass("header-color-scroll");
+      $(".js-header").addClass("l-header-color-scroll");
     } else {
-      $(".js-header").removeClass("header-color-scroll");
+      $(".js-header").removeClass("l-header-color-scroll");
     }
   });
 
