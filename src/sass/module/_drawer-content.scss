@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.drawer-content {
+.c-drawer-content {
   position: fixed;
   z-index: 899;
   top: 0;
@@ -12,7 +12,7 @@
   transition: transform 0.5s ease 0s;
 }
 
-.drawer-content.is-active {
+.c-drawer-content.is-active {
   transform: translateX(0); //.is-activeになったら左側へ出てくる
 }
 
@@ -20,16 +20,16 @@
   padding: rem(199) rem(18);
 }
 
-.drawer-content__item {
+.c-drawer-content__item {
   text-align: center;
   display: block;
 }
 
-.drawer-content__item:not(:first-child) {
+.c-drawer-content__item:not(:first-child) {
   margin-top: rem(18);
 }
 
-.drawer-content__item a {
+.c-drawer-content__item a {
   display: inline-block;
   padding-top: rem(7);
   padding-bottom: rem(6.2);
@@ -39,7 +39,7 @@
   letter-spacing: rem(2);
 }
 
-.drawer-content__item a::after {
+.c-drawer-content__item a::after {
   position: absolute;
   content: "";
   width: 0;
@@ -50,6 +50,6 @@
   transition: width 0.3s;
 }
 
-.drawer-content__item a:hover::after {
+.c-drawer-content__item a:hover::after {
   width: 100%;
 }
